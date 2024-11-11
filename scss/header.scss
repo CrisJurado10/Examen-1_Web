@@ -1,0 +1,38 @@
+/* Header */
+header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #300370;
+}
+body {
+    padding-top: 10px; /* Adjustttt this value saas based on your header's height */
+}
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #FFC107; /* Hover effect for links */
+}
+
+.menu-icon img {
+    height: 50px;
+    cursor: pointer; /* For mobile menu icon */
+}

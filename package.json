@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "build:sass": "sass scss/styles.scss css/styles.css"
-},
-
+    "build:sass": "sass scss/styles.scss css/styles.css"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "sass": "^1.80.6"
+  },
+  "dependencies": {
+    "examen_p1-respaldo": "file:"
   }
 }

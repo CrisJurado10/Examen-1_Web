@@ -1,0 +1,842 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #300370;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #300370;
+}
+body {
+    padding-top: 10px; /* Adjust this value saas based on your header's height */
+}
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #FFC107; /* Hover effect for links */
+}
+
+.menu-icon img {
+    height: 50px;
+    cursor: pointer; /* For mobile menu icon */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0; /* Adjusted padding for spacing */
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content p:first-of-type {
+    font-size: 1.2em; /* Slightly larger subtitle */
+    margin-bottom: 20px; /* Space after "Experiencia & Creatividad" */
+}
+
+.hero-content h1 {
+    font-size: 2.8em; /* Larger headline */
+    font-weight: bold; 
+    line-height: 1.2; /* Tighter line spacing */
+}
+
+.hero-content h1 strong {
+    font-weight: 700; /* Emphasized words are bolder */
+}
+
+.hero-content p:last-of-type {
+    font-size: 1em; /* Standard paragraph size */
+    margin-bottom: 40px; /* Space after description text */
+}
+
+.hero-content button {
+    background-color: #FFC107; /* Button background color */
+    border: none;
+    color: #4A148C; /* Text color inside button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; 
+    border-radius: 5px; 
+}
+
+.hero-content button:hover {
+    background-color: #FFD54F; /* Button hover effect */
+}
+
+.hero-image img {
+    max-width: 100%; /* Responsive image scaling */
+}
+
+/* Agency Section */
+.agency-section {
+    background-color: #fff; /* White background */
+    color: #300370; /* Dark purple text */
+    padding: 60px 0; /* Padding for spacing */
+}
+
+.agency-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.agency-text {
+    max-width: 50%;
+}
+
+.agency-text p:first-of-type {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.agency-text h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.agency-text h2 strong {
+    color: #300370; /* Dark purple for emphasis */
+}
+
+.agency-description {
+    color: #1c1c1c; 
+    max-width: 45%;
+}
+
+.agency-description p {
+    margin-bottom: 20px;
+}
+
+.agency-link {
+    color: #300370; /* Dark purple link */
+    text-decoration: underline;
+}
+
+
+/* Services Section */
+.services {
+    background-color: #300370; /* Purple background */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+}
+
+.service-item img {
+    max-width: 100px; /* Adjust size of service icons */
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+}
+
+/* Solutions Section */
+.solutions-section {
+    
+    color: white;
+    padding: 60px 0;
+    position: relative; /* To allow absolute positioning of child elements */
+}
+
+.solutions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solutions-left {
+    max-width: 50%;
+    position: relative; /* To contain absolutely positioned image */
+}
+
+.solutions-left p:first-of-type {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.solutions-left h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.solutions-left h2 strong {
+    color: white; /* White color for text */
+    text-shadow: 0 0 10px white; /* White glow for emphasis */
+}
+
+
+/* Image Wrapper for Positioning */
+.image-wrapper {
+    position: absolute;
+    bottom: -40px; /* Adjust this value to control how far below it goes */
+    left: 0;
+}
+
+.image-wrapper img {
+    max-width: 100%; /* Ensure image is responsive */
+}
+
+/* Right Side (Service Icons) */
+.solutions-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-icon {
+    text-align: center;
+}
+
+.service-icon img {
+    max-width: 130px; /* Adjust size of service icons */
+    margin-bottom: 10px;
+}
+
+.service-icon p {
+    font-size: 1em;
+}
+
+
+    /* Marketing Agency Section */
+.marketing-agency-section {
+    background-color: #fff; /* White background */
+    padding: 60px 0;
+    color: #300370; /* Dark purple text */
+}
+
+.agency-text {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.agency-text p:first-of-type {
+    font-size: 1.2em;
+}
+
+.agency-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.agency-text h2 strong {
+    color: #300370; /* Dark purple for emphasis */
+}
+
+/* Grid Layout for Images */
+.agency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: repeat(2, auto);   /* Two rows */
+    gap: 20px;                             /* Space between items */
+    align-items: center;                   /* Aligns items vertically in their respective rows */
+}
+
+.grid-item {
+    background-color: #f8f9fa; /* Light gray background for each item */
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 1em;
+}
+
+/* Main Image Styling */
+.main-image {
+    grid-column: span 1; /* Center column */
+    grid-row: span 2;     /* Span two rows to match the height of stacked images on left and right */
+    display: block; /* Ensures the container does not add unnecessary padding or background */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: none; /* Remove any background color */
+    padding: 0; /* Remove any internal padding */
+}
+
+.main-image img {
+    width: 100%; /* Make the image fill the container's width */
+    height: 100%; /* Make the image fill the container's height */
+    object-fit: contain; /* Ensure the entire image is visible without cutting off any part */
+    display: block; /* Removes space below the image */
+}
+
+
+/* Specific Positioning for Left and Right Stacks */
+.agency-grid > .grid-item:nth-child(1) { /* Project 1 (Top Left) */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    background: none; /* Remove any background */
+    padding: 0; /* Remove any internal padding */
+}
+
+.agency-grid > .grid-item:nth-child(2) { /* Project 2 (Bottom Left) */
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background: none; /* Remove any background */
+    padding: 0; /* Remove any internal padding */
+}
+
+.agency-grid > .grid-item:nth-child(4) { /* Project 3 (Top Right) */
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    background: none; /* Remove any background */
+    padding: 0; /* Remove any internal padding */
+}
+
+.agency-grid > .grid-item:nth-child(5) { /* Project 4 (Bottom Right) */
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    background: none; /* Remove any background */
+    padding: 0; /* Remove any internal padding */
+}
+
+ /* Experience Section */
+ .experience-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 140px 0;
+    color: white; /* White text on dark background */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -2; /* Place it behind everything */
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the overlay covers the entire section */
+    z-index: -1; /* Place it above the background but below content */
+}
+
+.experience-section .container {
+    position: relative; /* To position content above overlay */
+    z-index: 2; /* Ensure content is above overlay */
+}
+
+.experience-text {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.experience-text p:first-of-type {
+    font-size: 1.2em;
+}
+
+.experience-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item img {
+    max-width: 60px; /* Adjust size of icons */
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 2em;
+}
+
+.stat-item p {
+    font-size: 1em;
+} 
+
+
+/* Clients Section */
+.clients-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #fff; /* White background */
+}
+
+.clients-text {
+    max-width: 50%; /* Ensure the text takes up half of the container */
+}
+
+.clients-text h2 {
+    font-size: 2.5em;
+    color: #300370; /* Dark purple */
+}
+
+.clients-text h2 strong {
+    color: #4A148C; /* Emphasized text in darker purple */
+}
+
+.clients-text p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.clients-text a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #4A148C; /* Link color */
+    text-decoration: none;
+}
+
+.clients-text a:hover {
+    text-decoration: underline;
+}
+
+/* Clients Section */
+.clients-section {
+    padding: 60px 0; /* Adjust padding for top and bottom */
+    background-color: #fff; /* White background */
+}
+
+.middle-text {
+}
+
+.clients-text p.middle-text {
+    color: #6a2e92; /* Morado clarito */
+}
+
+.middle-text:first-of-type {
+    border-bottom: 1px solid #ffffff; /* Línea blanca */
+    padding-bottom: 10px; /* Espacio debajo de la línea */
+    margin-bottom: 10px; /* Espacio adicional entre los párrafos */
+}
+
+
+.container-flex {
+    display: flex;
+    justify-content: space-between; /* Distribute space between text and carousel */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    max-width: 1200px; /* Ensure consistent max-width across the page */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 0 20px; /* Add consistent padding on the left and right (adjust as needed) */
+}
+
+/* Text Styling */
+.clients-text {
+    max-width: 50%; /* Ensure the text takes up half of the container */
+}
+
+
+
+.clients-text h2 {
+    font-size: 2.5em;
+    color: #300370; /* Dark purple */
+}
+
+.clients-text h2 strong {
+    color: #4A148C; /* Emphasized text in darker purple */
+}
+
+.clients-text p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.clients-text a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #4A148C; /* Link color */
+    text-decoration: none;
+}
+
+.clients-text a:hover {
+    text-decoration: underline;
+}
+
+/* Carousel Styling */
+.carousel-container {
+    width: 45%; /* Adjust width as needed to align with text */
+    overflow: hidden; /* Hide overflow to create scrolling effect */
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll-carousel 10s linear infinite; /* Infinite scrolling animation */
+}
+
+.carousel-item {
+    min-width: 150px; /* Adjust this based on logo size */
+    margin-right: 20px; /* Space between logos */
+}
+
+.carousel-item img {
+    max-width: 100%;
+}
+
+/* Animation for automatic scrolling */
+@keyframes scroll-carousel {
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    padding: 60px 0; /* Adjust padding for top and bottom */
+    color: white; /* White text on dark background */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Place it behind everything */
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between; /* Distribute space between image and text/buttons */
+    align-items: center; /* Align items vertically */
+    width: 100%;
+    max-width: 1200px; /* Ensure consistent max-width across the page */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 0 20px; /* Add consistent padding on the left and right */
+}
+
+/* Left Side: Image Styling */
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Right Side: Text Styling */
+.contact-text p:first-of-type {
+    font-size: 1.2em;
+}
+
+.contact-text h2 {
+    font-size: 2.5em;
+}
+
+.contact-text h2 strong {
+    color: #FFFFFF; /* Strong white color for emphasis */
+}
+
+
+.contact-text p:last-of-type {
+    font-size: 1em;
+}
+
+/* Buttons Styling */
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-buttons .btn {
+    display: inline-block;
+    background-color: #FFC107; /* Yellow button background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0; /* Increased vertical space between buttons */
+    margin-right: 10px; /* Space between buttons horizontally */
+}
+
+
+.contact-buttons .btn:hover {
+    background-color: #FFD54F; /* Lighter yellow on hover */
+}
+
+/* Phrase Section */
+.quote-section {
+    text-align: center;
+    padding: 40px 0; /* Adjust padding for top and bottom */
+    background-color: #fff; /* White background */
+}
+
+.quote-section p {
+    font-size: 1.8em;
+    color: #4A148C; /* Dark purple text */
+    font-weight: normal;
+}
+
+.quote-section .highlight {
+    font-weight: bold;
+    color: #4A148C; /* Dark purple for emphasized text */
+}
+
+.quote-section .quote-mark {
+    font-size: 2.5em; /* Larger size for quotation marks */
+    color: #FFC107; /* Yellow color for quote marks */
+    position: relative;
+    top: 25px; /* Move quotation marks 25px down */
+}
+
+.quote-section .author {
+    font-size: 1em;
+    color: #4A148C; /* Dark purple for author name */
+    margin-top: 10px;
+}
+
+
+/* Info Section */
+.info-section {
+    background-color: #300370; /* Dark purple background */
+    color: white;
+    padding: 40px 0;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between columns */
+    align-items: flex-start; /* Align items at the top (same X-axis) */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.info-column {
+    max-width: 30%;
+}
+
+/* Emphasize Titles */
+.info-column h3 {
+    font-size: 2em; /* Increase font size for emphasis */
+    margin-bottom: 10px;
+    font-weight: 600; /* Slightly thicker font weight for emphasis */
+}
+
+.info-column p, .info-column ul {
+    font-size: 1em;
+    font-weight: 200; /* Thinner font weight for regular text */
+}
+
+.info-column ul {
+    list-style-type: none;
+}
+
+.info-column ul li {
+    margin-bottom: 8px;
+}
+
+.info-column a {
+    color: #FFFFFF; /* Bright white for emphasis */
+    font-weight: 500; /* Slightly thicker font weight for better readability */
+}
+
+
+/* Logos Section */
+.logos-section {
+    background-color: #38227b; /* Dark purple background */
+    padding: 20px 0; /* Adjust padding for top and bottom */
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between; /* Space between SSL, social media, and payment logos */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* SSL Certificate (Left) */
+.logo-item img {
+    max-width: 150px; /* Adjust size of SSL logo */
+}
+
+/* Social Media Icons (Center) */
+.social-media-icons {
+    display: flex;
+    gap: 20px; /* Space between social media icons */
+}
+
+.social-media-icons img {
+    width: 30px; /* Increased width */
+    height: 30px; /* Increased height */
+    object-fit: contain; /* Ensures the icon maintains its aspect ratio */
+    margin-right: 10px; /* Optional spacing between icons */
+}
+
+
+/* Payment Methods (Right) */
+.payment-methods {
+    display: flex;
+    gap: 20px; /* Space between payment method icons */
+}
+
+.payment-methods img {
+    max-width: 250px; /* Adjust size of payment logos */
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #22036f; /* Dark blue background */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Top Part: Logo and Company Info */
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    max-width: 200px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+.footer-top p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Middle Part: Dropdown for Country */
+.footer-middle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center the dropdown */
+}
+
+.country-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between flag and dropdown */
+}
+
+/* Style for the flag icon */
+.flag-icon {
+    width: 24px; /* Adjust width as needed */
+    height: auto;
+}
+
+#country-select {
+    padding: 10px;
+    background-color: white;
+    color: #300370; /* Dark purple text */
+    border-radius: 5px;
+    border: none;
+}
+
+/* Bottom Part: Links */
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 430px; /* Increase space between links for more distinction */
+}
+
+.footer-bottom a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    font-size: 1.1em; /* Slightly increase font size for better readability */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
